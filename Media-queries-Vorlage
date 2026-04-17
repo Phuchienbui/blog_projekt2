@@ -40,7 +40,7 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {                      //Kein Mobile mehr
   .container {
     padding: 2rem;
   }
