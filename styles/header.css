@@ -1,0 +1,51 @@
+/* === BASIS – Mobile (unter 480px) === */
+header {
+  background-color:#4EA487;
+;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 120px;
+}
+
+header img {
+  width: 72px;
+  height: 72px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Arima";
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+
+/* === 768px – Tablets === */
+@media (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+/* === 1536px – Große Monitore / Ultrawide === */
+@media (min-width: 1536px) {
+  header {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+}
