@@ -28,7 +28,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {          //Footer adjust
   .container {
     flex-direction: row;
     padding: 1.5rem;
@@ -40,7 +40,7 @@
 }
 
 
-@media (min-width: 1024px) {                      //Kein Mobile mehr
+@media (min-width: 1024px) { 
   .container {
     padding: 2rem;
   }
