@@ -3,9 +3,16 @@ header {
     background-color: #4EA487;
     width: 100%;
     display: flex;
+    padding:32px var(--space-lg) ;
+}
+
+header > div{
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 120px;
+
+
 }
 
 header img {
@@ -30,9 +37,12 @@ nav a {
 
 /* === 768px – Tablets === */
 @media (min-width: 768px) {
-    header {
-        justify-content: flex-start;
-    }
+   header > div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   }
 
     header img {
         width: 76px;
@@ -59,8 +69,13 @@ nav a {
 
 /* === 1536px – Große Monitore / Ultrawide === */
 @media (min-width: 1536px) {
-    header {
-        max-width: 1450px;
-        margin: 0 auto;
+    header{
+        justify-content:center;
     }
+    header > div{
+        max-width: 1450px;
+        width: 100%;
+    }
+
+
 }
