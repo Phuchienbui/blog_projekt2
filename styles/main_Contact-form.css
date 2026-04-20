@@ -1,0 +1,136 @@
+.contact-form {
+  gap: 32px;
+  padding-inline: calc((100% - 320px) / 2);
+}
+
+.contact-form h2 {
+  font-family: Arima;
+  font-style: bold;
+  font-weight: 7000;
+  color: #4ea487;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact-head {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form > p {
+  text-align: center;
+  color: #54370d;
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 500;
+  font-style: medium;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  color: #54370d;
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 500;
+  font-style: medium;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.questions div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid #54370d;
+  height: 94px;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+}
+.any-help {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: none;
+  height: 31px;
+  border: bottom 1px #54370d;
+}
+
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  gap: 40px;
+  padding-inline: calc((100% - 320px) / 2);
+}
+
+.privacy-check {
+  height: 42px;
+  width: 100%;
+  text-align: center;
+  color: #54370d;
+  font-family: "Palanquin";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.privacy-checkmark {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 24px;
+  gap: 8px;
+}
+
+#standout {
+  font-weight: 500;
+  color: #4ea487;
+  padding: 0 9px;
+}
+
+#p-padding {
+  height: 18px;
+}
+
+.privacy-checkmark > img {
+  width: 24px;
+  height: 24px;
+}
+
+.send-button {
+  width: 139px;
+  height: 48px;
+}
