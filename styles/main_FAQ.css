@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px;
-    font-family: "palanquin"; /* Oder deine gewählte Schriftart */
+    padding:  32px var(--space-padding-sides);
+    font-family: "palanquin"; 
 }
 
 .FAQ-headline {
@@ -16,7 +16,7 @@
 }
 
 .FAQ-headline h2 {
-    color: #4EA487; /* Das Grün aus dem Screenshot */
+    color: #4EA487; 
     font-size: 40px;
     margin: 0;
     font-family: 'Arima';
@@ -29,7 +29,7 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    max-width: 500px; 
+    max-width: 1440px; 
 }
 
 .einklappen {

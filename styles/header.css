@@ -3,7 +3,7 @@ header {
     background-color: #4EA487;
     width: 100%;
     display: flex;
-    padding:32px var(--space-lg) ;
+    padding:32px var(--space-padding-sides) ;
 }
 
 header > div{
