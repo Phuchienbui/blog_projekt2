@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 .contact-form {
   gap: 32px;
   padding-inline: calc((100% - 320px) / 2);
@@ -133,4 +139,59 @@ input[type="text"] {
 .send-button {
   width: 139px;
   height: 48px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .contact-form > p {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+ .contact-form > p {
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .contact-form {
+    gap: 32px;
+    padding: 0 50px;
+    
+  }
+
+  .questions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .credentials {
+    flex: 0 0 calc(50% - 32px); 
+  }
+
+  .any-help {
+    flex: 0 0 100%;
+  }
+}
+@media screen and (min-width: 1440px){
+
+  .contact-form {
+    gap: 32px;
+    
+    padding-inline: calc((100% - 1200px) / 2);
+    
+  }
+
+  .questions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .credentials {
+    flex: 0 0 calc(50% - 32px); 
+  }
+
+  .any-help {
+    flex: 0 0 100%;
+  }
 }
