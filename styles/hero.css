@@ -1,0 +1,67 @@
+.hero {
+  position: relative;
+  min-height: 515px;
+  max-width: 1440px;
+  margin: 0 auto; 
+  background: url('/assets/img/Cappadocia.jpg') no-repeat center/cover;
+  overflow: visible;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -40px;
+  width: 50%;
+  background: url('/assets/icons/Yellow_Cappadocia_desktop.svg') no-repeat left center;
+  background-size: cover;
+  z-index: 2;
+}
+.hero-content {
+  padding: 60px;
+  max-width: 400px;
+  color: #4a2d00;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.hero-badge {
+  position: absolute;
+  left: 35%;
+  bottom: 40px;
+  width: 140px;
+  height: 140px;
+  background: #2c7766;
+  border-radius: 50%;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge-flag {
+  width: 50px;
+  height: 50px;
+}
+.badge-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
