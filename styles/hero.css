@@ -106,10 +106,14 @@
 
   .hero-content h1 {
     display: block;
+    font-family: "Arima", sans-serif;
+    font-weight: 700;
   }
 
   .hero-content p {
     display: block;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
   }
   
 
