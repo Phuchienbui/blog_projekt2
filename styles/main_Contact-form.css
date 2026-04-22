@@ -138,7 +138,7 @@ input[type="text"] {
 #standout {
   font-weight: 500;
   color: #4ea487;
-  padding: 0 clamp(0.25rem,1vw,1rem);
+  padding: 0 clamp(0.25rem,0vw,0.75rem);
 }
 
 #p-padding {
