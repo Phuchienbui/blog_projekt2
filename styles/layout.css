@@ -11,6 +11,7 @@
 
   --space-padding-sides: clamp(1.25rem, 8vw, 7.5rem);
   --space-margin: clamp(5rem, 8vw, 7.5rem);
+  --space-gap:clamp(2.5rem, 8vw, 5rem);
 
 
 }
