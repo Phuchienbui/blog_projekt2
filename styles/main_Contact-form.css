@@ -121,7 +121,7 @@ input[type="text"] {
   text-align: center;
   color: #54370d;
   font-family: "Palanquin";
-  font-size: 15px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: 400;
   font-style: normal;
 }
@@ -138,7 +138,7 @@ input[type="text"] {
 #standout {
   font-weight: 500;
   color: #4ea487;
-  padding: 0 9px;
+  padding: 0 clamp(0.25rem,1vw,1rem);
 }
 
 #p-padding {
