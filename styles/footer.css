@@ -3,6 +3,7 @@ footer {
   flex-direction: column;
   width: 100%;
   background-color: #4ea487;
+
 }
 
 .footer-top {
@@ -10,6 +11,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 24px 15px 24px;
+  
+  
 }
 
 
@@ -37,7 +40,7 @@ footer {
 }
 .footer-left a {
   text-decoration: none;
-  font-size:16px;
+  font-size:18px;
   font-family: 'Palanquin';
   font-style: normal;
   font-weight: 400;
@@ -91,8 +94,8 @@ footer {
   .footer-top {
     display: flex;
     justify-content: space-between;
-    padding: 60px 120px;
-    padding-inline: calc((100% - 1024px) / 2);
+     padding:58px var(--space-padding-sides) ;
+    
   }
   .footer-left {
     flex-direction: row;
@@ -118,8 +121,8 @@ footer {
    .footer-top {
     display: flex;
     justify-content: space-between;
-    padding: 60px 120px;
-    padding-inline: calc((100% - 1440px) / 2);
+    padding:58px var(--space-padding-sides) ;
+  
   }
   .footer-left {
     flex-direction: row;
