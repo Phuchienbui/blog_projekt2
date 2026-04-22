@@ -28,11 +28,13 @@
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  display: none;
 }
 
 .hero-content p {
    font-size: var(--fs-body);
   line-height: 1.5;
+  display: none;
 }
 .hero-badge {
   position: absolute;
@@ -67,4 +69,15 @@
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+@media (min-width: 768px) {
+  .hero-content h1 {
+  display: block;
+}
+
+.hero-content p { 
+  display: block;
+}
+  
 }
