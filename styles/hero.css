@@ -125,7 +125,6 @@
   .hero-content {
   padding: 100px 0;
   max-width: 300px;
-  color: #4a2d00;
 }
   .hero-badge {
     left: 38vw;
@@ -136,7 +135,6 @@
   .hero-content {
   padding: 140px 0;
   max-width: 350px;
-  color: #4a2d00;
 }
   .hero-badge {
     left: 40vw;
@@ -145,9 +143,7 @@
 
 @media (min-width: 1440px) {
   .hero-content {
-  padding: 140px 0;
   max-width: 400px;
-  color: #4a2d00;
 }
   .hero-badge {
     left: 600px;
