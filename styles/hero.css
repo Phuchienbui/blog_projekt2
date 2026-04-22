@@ -2,27 +2,18 @@
   position: relative;
   min-height: 515px;
   max-width: 1440px;
-  margin: 0 auto; 
-  background: url('/assets/img/Cappadocia.jpg') no-repeat center/cover;
+  margin: 0 auto;
+  background: url('/assets/img/Hero-Mobile.jpg') no-repeat center/cover;
   overflow: visible;
   margin-bottom: var(--space-margin);
-  padding-left:  var(--space-padding-sides);
+  padding-left: var(--space-padding-sides);
   padding-right: var(--space-padding-sides);
 }
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: -40px;
-  width: 50%;
-  background: url('/assets/icons/Yellow_Cappadocia_desktop.svg') no-repeat left center;
-  background-size: cover;
-  z-index: 2;
-}
+
 .hero-content {
-  padding: 60px;
-  max-width: 400px;
-  color: #4a2d00;
+    padding: 60px 0;
+    max-width: 200px;
+    color: #4a2d00;
 }
 
 .hero-content h1 {
@@ -32,16 +23,17 @@
 }
 
 .hero-content p {
-   font-size: var(--fs-body);
+  font-size: var(--fs-body);
   line-height: 1.5;
   display: none;
 }
+
 .hero-badge {
   position: absolute;
-  left: 35%;
-  bottom: 40px;
-  width: 140px;
-  height: 140px;
+  left: 15vw;
+  bottom: 230px;
+  width: 160px;
+  height: 160px;
   background: #2c7766;
   border-radius: 50%;
   z-index: 3;
@@ -49,11 +41,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  scale: 0.8;
 }
+
 .badge-flag {
   width: 50px;
   height: 50px;
 }
+
 .badge-text {
   position: absolute;
   top: 50%;
@@ -62,22 +57,99 @@
 
   animation: rotateText 10s linear infinite;
 }
+
 @keyframes rotateText {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
+
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-@media (min-width: 768px) {
-  .hero-content h1 {
-  display: block;
+@media (min-width: 368px) {
+  .hero-badge {
+    left: 18vw;
+  }
 }
 
-.hero-content p { 
-  display: block;
+@media (min-width: 468px) {
+  .hero-badge {
+    left: 21vw;
+  }
 }
+
+@media (min-width: 568px) {
+  .hero-badge {
+    left: 24vw;
+  }
+}
+
+@media (min-width: 568px) {
+  .hero-badge {
+    left: 27vw;
+  }
+}
+
+@media (min-width: 768px) {
   
+  .hero {
+    background: url('/assets/img/Hero-Desktop.jpg') no-repeat center/cover;
+  }
+
+  .hero-badge {
+    left: 34vw;
+    bottom: 85px;
+    scale: 1;
+  }
+
+  .hero-content h1 {
+    display: block;
+  }
+
+  .hero-content p {
+    display: block;
+  }
+  
+
+}
+
+@media (min-width: 868px) {
+  .hero-badge {
+    left: 36vw;
+  }
+}
+
+@media (min-width: 968px) {
+  .hero-content {
+  padding: 100px 0;
+  max-width: 300px;
+  color: #4a2d00;
+}
+  .hero-badge {
+    left: 38vw;
+  }
+}
+
+@media (min-width: 1068px) {
+  .hero-content {
+  padding: 140px 0;
+  max-width: 350px;
+  color: #4a2d00;
+}
+  .hero-badge {
+    left: 40vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-content {
+  padding: 140px 0;
+  max-width: 400px;
+  color: #4a2d00;
+}
+  .hero-badge {
+    left: 600px;
+  }
 }
