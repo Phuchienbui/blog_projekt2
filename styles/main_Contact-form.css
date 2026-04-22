@@ -7,6 +7,13 @@
 .contact-form {
   gap: 32px;
   padding-inline: calc((100% - 320px) / 2);
+  margin-bottom: var(--space-margin);
+    padding-left:  var(--space-padding-sides);
+    padding-right: var(--space-padding-sides);
+    max-width: 1560px;
+    margin: 0 auto;
+    margin-bottom: var(--space-margin);
+  
 }
 
 .contact-form h2 {
@@ -14,6 +21,7 @@
   font-style: bold;
   font-weight: 700;
   color: #4ea487;
+  font-size: var(--fs-h2);
 }
 
 .contact-header {
@@ -22,10 +30,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 8px;
 }
 
 .contact-header h2 {
-  font-size: 40px;
+  font-size: var(--fs-h2);
   font-weight: 700;
 }
 
@@ -35,15 +44,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  margin-bottom:32px;
 }
 
 .contact-form > p {
   text-align: center;
   color: #54370d;
   font-family: "Palanquin";
-  font-size: 24px;
+  font-size: var(--fs-body);
   font-weight: 500;
   font-style: medium;
+  display: none;
+  margin-bottom: 56px;
 }
 
 form {
@@ -60,11 +73,12 @@ form {
   text-align: left;
   color: #54370d;
   font-family: "Palanquin";
-  font-size: 24px;
+ font-size: var(--fs-body);
   font-weight: 500;
   font-style: medium;
   gap: 32px;
   flex-wrap: wrap;
+  
 }
 
 .questions div {
@@ -73,6 +87,7 @@ form {
   justify-content: space-around;
   border-bottom: 1px solid #54370d;
   height: 94px;
+  gap: 8px;
 }
 
 .credentials {
@@ -140,58 +155,27 @@ input[type="text"] {
   width: 139px;
   height: 48px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media  (min-width: 768px) {
 
   .contact-form > p {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
- .contact-form > p {
-    display: none;
-  }
-  
-}
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-
-    .contact-form {
+    display: block;
     gap: 32px;
-    padding: 0 50px;
-    
-  }
-
-  .questions {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .credentials {
-    flex: 0 0 calc(50% - 32px); 
-  }
-
-  .any-help {
-    flex: 0 0 100%;
-  }
-}
-@media screen and (min-width: 1440px){
-
-  .contact-form {
-    gap: 32px;
-    
     padding-inline: calc((100% - 1200px) / 2);
     
   }
-
   .questions {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .credentials {
-    flex: 0 0 calc(50% - 32px); 
+    flex: 0 0 calc(50% - 16px); 
   }
 
   .any-help {
     flex: 0 0 100%;
   }
+
+  
 }
+

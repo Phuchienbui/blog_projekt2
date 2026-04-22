@@ -1,26 +1,27 @@
 :root {
-  --farbe-primary:  #F1C953;
-  --farbe-accent:   #4EA487;
-  --farbe-text:     #54370D;
-  
+  --farbe-primary: #F1C953;
+  --farbe-accent: #4EA487;
+  --farbe-text: #54370D;
 
-  
-  --fs-h2:    clamp(2.5rem, 3vw + 1rem,   3.25rem);
-  --fs-h1:    clamp(2.5rem, 3vw + 1rem,   4rem);
-  --fs-body:  clamp(1rem, 2vw + 0.5rem, 1.5rem);
 
-  --space-padding-sides: clamp(1.25rem,  8vw, 7.5rem) ;
-  --space-gap: clamp(5rem, 8vh, 7.5rem);
 
-  
+  --fs-h2: clamp(2.5rem, 2.5vw + 1rem, 3.25rem);
+  --fs-h1: clamp(2.5rem, 3vw + 1rem, 4rem);
+  --fs-body: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+
+  --space-padding-sides: clamp(1.25rem, 8vw, 7.5rem);
+  --space-margin: clamp(5rem, 8vw, 7.5rem);
+
+
 }
 
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  
+  min-height: 100vh;
+  scroll-behavior: smooth;
+
 }
 
 header {
@@ -28,7 +29,7 @@ header {
 }
 
 main {
-  flex: 1; 
+  flex: 1;
   width: 100%;
 }
 

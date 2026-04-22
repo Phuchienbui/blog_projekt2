@@ -3,8 +3,14 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding:  32px var(--space-padding-sides);
-    font-family: "palanquin"; 
+    font-family: "palanquin";
+    margin-bottom: var(--space-margin);
+    padding-left: var(--space-padding-sides);
+    padding-right: var(--space-padding-sides);
+}
+
+.FAQ p {
+    font-size: var(--fs-body);
 }
 
 .FAQ-headline {
@@ -16,12 +22,12 @@
 }
 
 .FAQ-headline h2 {
-    color: #4EA487; 
-    font-size: 40px;
+    color: #4EA487;
+    font-size: var(--fs-h2);
     margin: 0;
     font-family: 'Arima';
-  font-style: normal;
-  font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .FAQ-list {
@@ -29,12 +35,12 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    max-width: 1440px; 
+    max-width: 1440px;
 }
 
 .einklappen {
     background-color: #F1C953;
-    border-radius: 12px; 
+    border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -42,7 +48,7 @@
 
 summary {
     padding: 20px 24px;
-    list-style: none; 
+    list-style: none;
     cursor: pointer;
     font-weight: 600;
     color: #54370D;
@@ -61,8 +67,8 @@ summary::after {
     border-right: 3px solid #54370D;
     border-bottom: 3px solid #54370D;
     transform: rotate(45deg);
-    margin-bottom: 5px; 
-    
+    margin-bottom: 5px;
+
 }
 
 

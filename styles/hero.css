@@ -5,6 +5,9 @@
   margin: 0 auto; 
   background: url('/assets/img/Cappadocia.jpg') no-repeat center/cover;
   overflow: visible;
+  margin-bottom: var(--space-margin);
+  padding-left:  var(--space-padding-sides);
+  padding-right: var(--space-padding-sides);
 }
 .hero-overlay {
   position: absolute;
@@ -28,7 +31,7 @@
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+   font-size: var(--fs-body);
   line-height: 1.5;
 }
 .hero-badge {

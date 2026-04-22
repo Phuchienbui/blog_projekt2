@@ -1,4 +1,3 @@
-/* === BASIS – Mobile (unter 480px) === */
 header {
     background-color: #4EA487;
     width: 100%;
@@ -35,7 +34,7 @@ nav a {
 
 
 
-/* === 768px – Tablets === */
+
 @media (min-width: 768px) {
    header > div{
     width: 100%;
