@@ -50,26 +50,24 @@
 
 
 summary {
-    padding: 24px;
-    list-style: none;
-    cursor: pointer;
-    font-weight: 800; 
-    color: #54370D;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: none;
-    font-size: 1.5rem;
+    gap: 15px; 
+    cursor: pointer;
+    padding: 24px;
+    
 }
-
 
 summary::after {
     content: '';
+    flex-shrink : 0; 
     width: 12px;
     height: 12px;
     border-right: 3px solid #54370D;
     border-bottom: 3px solid #54370D;
     transform: rotate(45deg);
+    margin-left: 10px;
     transition: transform 0.3s ease;
 }
 
