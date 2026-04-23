@@ -21,6 +21,8 @@ body {
     color: var(--farbe-accent);
     font-size: var(--fs-h2);
     margin-bottom: 5px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .textfild-head h1 {
@@ -28,6 +30,8 @@ body {
     font-size: var(--fs-h1);
     line-height: 1.1;
     margin-bottom: 15px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .textfild-head p {
@@ -281,7 +285,7 @@ ol {
 }
 
 ol li {
-    margin-bottom: 25px;   
+    margin-bottom: 25px;
 }
 
 
@@ -291,16 +295,16 @@ ol li:last-child {
 
 
 ol {
-    max-width: 1100px;    
-    margin-left: auto;   
-    margin-right: auto;  
-    
-    padding-left: 40px;  
-    text-align: left;    
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 40px;
+    text-align: left;
 }
 
 ol li {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 
