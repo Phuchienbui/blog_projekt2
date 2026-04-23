@@ -71,7 +71,7 @@ summary::after {
     border-right: 3px solid #54370D;
     border-bottom: 3px solid #54370D;
     transform: rotate(45deg);
-    transition: transform 300ms ease-in-out;
+    transition: transform 600ms ease-in-out;
     margin-right: 5px;
 }
 
