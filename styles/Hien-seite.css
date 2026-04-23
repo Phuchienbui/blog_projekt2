@@ -119,7 +119,9 @@ body {
     letter-spacing: 0%;
 
 }
-
+.standout-article{
+    font-weight: 700;
+}
 
 .video-container {
     width: 100%;
