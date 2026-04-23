@@ -70,6 +70,7 @@
 }
 
 .slider_a_element {
+    display: flex;
     width: 100%;
     flex-shrink: 0;
 }
