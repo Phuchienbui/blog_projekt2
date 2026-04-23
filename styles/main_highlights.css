@@ -9,8 +9,6 @@
 }
 
 .highlights_header {
-    width: 330px;
-    padding: 0 1.25rem;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -28,6 +26,16 @@
     font-size: var(--fs-h2);
     color: rgba(78, 164, 135, 1);
 }
+.highlights_text p{
+    display: block;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
+    font-size: var(--fs-body);
+    max-width: 1000px;
+    margin-bottom: 88px;
+    display: none;
+  }
+
 
 .slider_a_wrapper_a {
     position: relative;
