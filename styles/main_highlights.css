@@ -35,6 +35,10 @@
     max-width: 1000px;
     margin-bottom: 88px;
     display: none;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: center;
+
 }
 
 
@@ -162,6 +166,9 @@
 }
 
 @media (min-width: 768px) {
+    .highlights_text p {
+        display: block;
+    }
 
     .slide_content h2 {
         font-size: var(--fs-h2);
