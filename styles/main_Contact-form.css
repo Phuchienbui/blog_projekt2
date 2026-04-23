@@ -102,7 +102,11 @@ input[type="text"] {
   width: 100%;
   border: none;
   height: 31px;
-  border: bottom 1px #54370d;
+  font-family: "Palanquin";
+  font-size: var(--fs-body);
+}
+input[type="text"]:focus {
+  outline: none;
 }
 
 .form-bottom {
@@ -130,25 +134,24 @@ input[type="text"] {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
   height: 24px;
   gap: 8px;
 }
 
-#standout {
+.standout-policy {
   font-weight: 500;
   color: #4ea487;
   padding: 0 clamp(0.25rem,0vw,0.75rem);
 }
 
-#p-padding {
-  height: 18px;
-}
-
-.privacy-checkmark > img {
+.privacy-checkmark input {
   width: 24px;
   height: 24px;
 }
+/* .privacy-checkmark p {
+  font-size: var(--fs-checkbox);
+} */
 
 .send-button {
   width: 139px;
