@@ -79,7 +79,7 @@ footer {
 
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: clamp(35px, 6vw, 48px);
   padding: 24px 35.5px;
 
