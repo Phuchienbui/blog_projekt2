@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arima';
+    font-family: 'Palanquin';
     font-style: normal;
     font-weight: 700;
     color: #54370D;
@@ -89,7 +89,6 @@ body {
 .autor-text {
     font-size: 16px;
     line-height: 1.4;
-    font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
 }
@@ -107,7 +106,6 @@ body {
     max-width: 1440px;
     margin-bottom: var(--space-margin);
     gap: calc((var(--space-gap))/2);
-    font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
     font-size: var(--fs-body);
@@ -266,7 +264,6 @@ ol {
 
 
 .pro-tipps-content {
-    font-family: 'Palanquin', sans-serif;
     color: #54370D;
     font-size: 16px;
     line-height: 1.5;
