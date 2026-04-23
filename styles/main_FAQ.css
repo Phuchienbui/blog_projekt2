@@ -71,13 +71,13 @@ summary::after {
     border-right: 3px solid #54370D;
     border-bottom: 3px solid #54370D;
     transform: rotate(45deg);
-    transition: transform 0.3s ease;
+    transition: transform 300ms ease-in-out;
     margin-right: 5px;
 }
 
 
 .einklappen[open] summary::after {
-    transform: rotate(-135deg) ease-in-out;
+    transform: rotate(-135deg) ;
 }
 
 
