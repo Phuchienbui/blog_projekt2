@@ -104,6 +104,8 @@ input[type="text"] {
   height: 31px;
   font-family: "Palanquin";
   font-size: var(--fs-body);
+  color: #4ea487;
+  font-weight: 500;
 }
 input[type="text"]:focus {
   outline: none;
@@ -117,6 +119,7 @@ input[type="text"]:focus {
   height: 130px;
   gap: 40px;
   padding-inline: calc((100% - 320px) / 2);
+  padding-top: 22px;
 }
 
 .privacy-check {
@@ -125,18 +128,21 @@ input[type="text"]:focus {
   text-align: center;
   color: #54370d;
   font-family: "Palanquin";
-  font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: 400;
   font-style: normal;
+  font-size: 15px;
 }
 
 .privacy-checkmark {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* align-items: center; */
-  height: 24px;
+  justify-content: center;
   gap: 8px;
+  text-align: center;
+}
+.privacy-checkmark p {
+  max-width: 500px;
+  line-height: 120%;
+  text-align: left;
 }
 
 .standout-policy {
@@ -148,16 +154,18 @@ input[type="text"]:focus {
 .privacy-checkmark input {
   width: 24px;
   height: 24px;
+  accent-color:#4EA487;
+  transform: scale(1.2);
 }
-/* .privacy-checkmark p {
-  font-size: var(--fs-checkbox);
-} */
 
 .send-button {
   width: 139px;
   height: 48px;
 }
 @media  (min-width: 768px) {
+  .privacy-checkmark {
+    align-items: center;
+}
 
   .contact-form > p {
     display: block;
@@ -177,7 +185,13 @@ input[type="text"]:focus {
   .any-help {
     flex: 0 0 100%;
   }
-
+  
+.privacy-checkmark p {
+    white-space: nowrap;
+  }
+  .form-bottom {
+  padding-top: 16px;
+}
   
 }
 

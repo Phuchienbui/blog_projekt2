@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 88px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -12,7 +16,7 @@ footer {
   justify-content: space-between;
   padding: 30px 24px 15px 24px;
 
-  
+
 }
 
 
@@ -20,9 +24,11 @@ footer {
 #impressum {
   order: 1;
 }
+
 #cookie {
   order: 2;
 }
+
 #my-webpage {
   order: 3;
 }
@@ -37,9 +43,10 @@ footer {
   font-style: normal;
   justify-content: center;
 }
+
 .footer-left a {
   text-decoration: none;
-  font-size:18px;
+  font-size: 1rem;
   font-family: 'Palanquin';
   font-style: normal;
   font-weight: 400;
@@ -52,36 +59,48 @@ footer {
   justify-content: center;
   gap: 4px;
 }
+
 .footer-right {
   display: flex;
   align-items: flex-end;
   gap: 16px;
 }
+
 .copyright {
   display: flex;
 }
 
 .footer-mobile-ekstra {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #f1c953;
-  gap: 48px;
-  padding: 24px 35.5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
   width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: clamp(35px, 6vw, 48px);
+  padding: 24px 35.5px;
+
+  background-color: #f1c953;
+  z-index: 1000;
+}
+.footer-mobile-ekstra img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
-   .footer-left {
+  .footer-left {
     font-size: 12px;
-  }
-  .footer-mobile-ekstra a {
-    width: 80%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
 
   .footer-mobile-ekstra {
     display: none;
@@ -93,19 +112,23 @@ footer {
   .footer-top {
     display: flex;
     justify-content: space-between;
-     padding:58px var(--space-padding-sides) ;
-    
+    padding: 58px var(--space-padding-sides);
+
   }
+
   .footer-left {
     flex-direction: row;
     gap: 48px;
   }
+
   #impressum {
     order: 2;
   }
+
   #cookie {
     order: 3;
   }
+
   #my-webpage {
     order: 1;
   }
@@ -117,12 +140,13 @@ footer {
 
 @media screen and (min-width: 1440px) {
 
-   .footer-top {
+  .footer-top {
     display: flex;
     justify-content: space-between;
-    padding:58px var(--space-padding-sides) ;
-  
+    padding: 58px var(--space-padding-sides);
+
   }
+
   .footer-left {
     flex-direction: row;
     gap: 48px;
@@ -131,9 +155,11 @@ footer {
   #impressum {
     order: 2;
   }
+
   #cookie {
     order: 3;
   }
+
   #my-webpage {
     order: 1;
   }
