@@ -3,14 +3,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-family: "palanquin";
     margin-bottom: var(--space-margin);
-    padding-left: var(--space-padding-sides);
-    padding-right: var(--space-padding-sides);
-}
-
-.FAQ p {
-    font-size: 1rem;
+    padding: 0 var(--space-padding-sides);
 }
 
 .FAQ-headline {
@@ -25,8 +19,7 @@
     color: #4EA487;
     font-size: var(--fs-h2);
     margin: 0;
-    font-family: 'Arima';
-    font-style: normal;
+    font-family: 'Arima', cursive;
     font-weight: 700;
 }
 
@@ -44,31 +37,42 @@
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
-    border: none; 
-    margin-bottom: 16px;
+    border: none;
+    margin-bottom: 8px;
 }
 
-
+/* Header-Bereich (Frage) */
 summary {
+    padding: 24px;
+    list-style: none; 
+    cursor: pointer;
+    font-weight: 700;
+    color: #54370D;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px; 
-    cursor: pointer;
-    padding: 24px;
-    
+    gap: 20px; 
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'Palanquin', sans-serif;
 }
+
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 
 summary::after {
     content: '';
-    flex-shrink : 0; 
+    flex-shrink: 0; 
     width: 12px;
     height: 12px;
     border-right: 3px solid #54370D;
     border-bottom: 3px solid #54370D;
     transform: rotate(45deg);
-    margin-left: 10px;
     transition: transform 0.3s ease;
+    margin-right: 5px;
 }
 
 
@@ -78,14 +82,27 @@ summary::after {
 
 
 .FAQ-text {
-    background-color: white; 
+    background-color: white;
     color: #54370D;
-    padding: 10px;
+    padding: 20px;
     margin: 0 16px 16px 16px; 
-    border-radius: 8px; 
-    line-height: 1.2;
+    border-radius: 8px;
+    line-height: 1.6;
     font-family: 'Palanquin', sans-serif;
-    font-weight: 500;
-    border: none; 
+    font-weight: 400;
     font-size: 1rem;
+    border: none;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 600px) {
+    summary {
+        font-size: 1.2rem; 
+        padding: 16px;
+    }
+    
+    .FAQ-text {
+        margin: 0 12px 12px 12px;
+        padding: 16px;
+    }
 }
