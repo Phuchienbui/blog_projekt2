@@ -41,17 +41,17 @@
     margin-bottom: 8px;
 }
 
-/* Header-Bereich (Frage) */
+
 summary {
     padding: 24px;
-    list-style: none; 
+    list-style: none;
     cursor: pointer;
     font-weight: 700;
     color: #54370D;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
     outline: none;
     font-size: 1.5rem;
     font-family: 'Palanquin', sans-serif;
@@ -65,7 +65,7 @@ summary::-webkit-details-marker {
 
 summary::after {
     content: '';
-    flex-shrink: 0; 
+    flex-shrink: 0;
     width: 12px;
     height: 12px;
     border-right: 3px solid #54370D;
@@ -77,7 +77,7 @@ summary::after {
 
 
 .einklappen[open] summary::after {
-    transform: rotate(-135deg);
+    transform: rotate(-135deg) ease-in-out;
 }
 
 
@@ -85,7 +85,7 @@ summary::after {
     background-color: white;
     color: #54370D;
     padding: 20px;
-    margin: 0 16px 16px 16px; 
+    margin: 0 16px 16px 16px;
     border-radius: 8px;
     line-height: 1.6;
     font-family: 'Palanquin', sans-serif;
@@ -94,13 +94,13 @@ summary::after {
     border: none;
 }
 
-/* Mobile Optimierung */
+
 @media (max-width: 600px) {
     summary {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
         padding: 16px;
     }
-    
+
     .FAQ-text {
         margin: 0 12px 12px 12px;
         padding: 16px;
