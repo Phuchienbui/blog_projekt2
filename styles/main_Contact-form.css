@@ -14,15 +14,6 @@
     margin-bottom: var(--space-margin);
   
 }
-
-.contact-form h2 {
-  font-family: 'Arima';
-  font-style: bold;
-  font-weight: 700;
-  color: #4ea487;
-  font-size: var(--fs-h2);
-}
-
 .contact-header {
   display: flex;
   flex-direction: column;
@@ -30,11 +21,6 @@
   justify-content: center;
   text-align: center;
   gap: 8px;
-}
-
-.contact-header h2 {
-  font-size: var(--fs-h2);
-  font-weight: 700;
 }
 
 .contact-head {
@@ -87,6 +73,10 @@ form {
   border-bottom: 1px solid #54370d;
   height: 94px;
   gap: 8px;
+}
+label {
+  cursor: pointer;
+  display: contents;
 }
 
 .credentials {

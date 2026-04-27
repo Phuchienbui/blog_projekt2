@@ -1,0 +1,51 @@
+.legal-container {
+  width: 100%;
+  padding: 40px 24px;
+}
+
+.legal-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Palanquin", sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.legal-content h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.legal-content h2 {
+  font-size: 20px;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.legal-content p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  max-width: 800px; /* macht Text angenehmer lesbar */
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .legal-container {
+    padding: 60px var(--space-padding-sides);
+  }
+
+  .legal-content h1 {
+    font-size: 40px;
+  }
+
+  .legal-content h2 {
+    font-size: 22px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .legal-content {
+    max-width: 1440px;
+  }
+}
